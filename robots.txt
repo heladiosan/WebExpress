@@ -1,1 +1,4 @@
+User-agent: *
+Allow: /
 
+Sitemap: https://heladiosan.github.io/WebExpress/sitemap.xml
