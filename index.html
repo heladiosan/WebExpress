@@ -2,155 +2,170 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>WebExpress | Páginas web económicas en Colombia</title>
-  <meta name="description" content="Páginas web profesionales económicas en Colombia desde $180.000 COP. Diseño rápido, botón WhatsApp, indexadas en Google.">
-  <meta name="keywords" content="paginas web colombia, paginas web economicas, pagina web basica, landing page colombia, diseño web bogota">
+  <title>WebExpress | Páginas web profesionales y económicas en Colombia</title>
+
+  <!-- SEO básico -->
+  <meta name="description" content="WebExpress crea páginas web profesionales rápidas y económicas en Colombia. Plan básico desde $180.000 COP, listas en 48 horas, con WhatsApp e indexación en Google.">
+  <meta name="keywords" content="páginas web Colombia, páginas web económicas, landing page Colombia, diseño web básico, web para emprendedores">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://heladiosan.github.io/WebExpress/">
+
+  <!-- Responsive -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="WebExpress | Páginas web profesionales rápidas">
+  <meta property="og:description" content="Páginas web listas en 48 horas. Económicas, profesionales y optimizadas para Google.">
+  <meta property="og:url" content="https://heladiosan.github.io/WebExpress/">
+  <meta property="og:locale" content="es_CO">
+
+  <!-- Schema.org -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "WebExpress",
+    "url": "https://heladiosan.github.io/WebExpress/",
+    "telephone": "+573168726521",
+    "address": {
+      "@type": "PostalAddress",
+      "addressCountry": "CO",
+      "addressLocality": "Bogotá"
+    },
+    "areaServed": "CO",
+    "description": "Servicio de creación de páginas web profesionales, rápidas y económicas en Colombia."
+  }
+  </script>
+
   <style>
-    body {
-      margin: 0;
-      font-family: Arial, Helvetica, sans-serif;
-      background: #f6f8fb;
-      color: #1f2937;
+    :root{
+      --brand:#1e40af;
+      --accent:#16a34a;
+      --danger:#dc2626;
+      --bg:#f8fafc;
+      --paper:#ffffff;
+      --border:#e5e7eb;
+      --radius:14px;
     }
 
-    /* HEADER */
-    header {
-      background: linear-gradient(135deg, #2563eb, #1e40af);
-      color: white;
-      padding: 50px 20px;
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family:Arial, Helvetica, sans-serif;
+      background:var(--bg);
+      color:#111;
+      line-height:1.6;
     }
 
-    header h1 {
-      margin: 0;
-      font-size: 2.3rem;
+    header{
+      background:linear-gradient(135deg,#2563eb,#1e40af);
+      color:#fff;
+      padding:28px 20px;
     }
 
-    header p {
-      margin-top: 8px;
-      font-size: 1.05rem;
-      opacity: 0.95;
+    header h1{
+      margin:0;
+      font-size:28px;
     }
 
-    .container {
-      max-width: 1100px;
-      margin: auto;
-      padding: 0 20px;
+    header p{
+      margin:6px 0 0;
+      opacity:.95;
     }
 
-    /* PLAN */
-    .plan {
-      background: white;
-      border-radius: 14px;
-      padding: 30px;
-      margin-top: -40px;
-      box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+    .wrap{
+      max-width:1100px;
+      margin:auto;
+      padding:20px;
     }
 
-    .plan-basico {
-      border: 3px solid #16a34a;
+    .card{
+      background:var(--paper);
+      border-radius:var(--radius);
+      padding:24px;
+      border:1px solid var(--border);
+      margin-top:20px;
     }
 
-    .plan h2 {
-      margin-top: 0;
+    .plan-basico{
+      border:2px solid #22c55e;
     }
 
-    .price {
-      font-size: 2.1rem;
-      font-weight: bold;
-      margin: 10px 0;
+    .plan-estandar{
+      border:2px solid var(--danger);
     }
 
-    ul {
-      padding-left: 20px;
-      line-height: 1.6;
+    h2{
+      margin-top:0;
     }
 
-    .note {
-      margin-top: 15px;
-      font-size: 0.95rem;
-      background: #fef3c7;
-      padding: 12px;
-      border-radius: 8px;
+    ul{
+      padding-left:18px;
     }
 
-    /* BUTTONS */
-    .buttons {
-      display: flex;
-      gap: 15px;
-      flex-wrap: wrap;
-      margin-top: 20px;
+    .btn-row{
+      display:flex;
+      gap:12px;
+      flex-wrap:wrap;
+      margin-top:16px;
     }
 
-    .btn {
-      padding: 14px 20px;
-      border-radius: 8px;
-      text-decoration: none;
-      font-weight: bold;
-      text-align: center;
-      display: inline-block;
+    .btn{
+      display:inline-block;
+      padding:12px 16px;
+      border-radius:10px;
+      color:#fff;
+      text-decoration:none;
+      font-weight:700;
     }
 
-    .btn-wa {
-      background: #16a34a;
-      color: white;
+    .btn-wa{background:#16a34a}
+    .btn-red{background:#dc2626}
+    .btn-blue{background:#2563eb}
+
+    .notice{
+      background:#fef3c7;
+      padding:12px;
+      border-radius:10px;
+      margin-top:14px;
+      font-size:14px;
     }
 
-    .btn-catalogo {
-      background: #dc2626;
-      color: white;
+    .contact-box{
+      border-left:5px solid #2563eb;
+      margin-top:20px;
     }
 
-    /* CONTACT BOX */
-    .contact-box {
-      background: #ffffff;
-      border-radius: 12px;
-      padding: 22px;
-      margin-top: 30px;
-      box-shadow: 0 8px 22px rgba(0,0,0,0.08);
-      border-left: 6px solid #2563eb;
-    }
-
-    .contact-box h3 {
-      margin-top: 0;
-    }
-
-    /* CATALOGO */
-    section {
-      padding: 60px 20px;
-    }
-
-    footer {
-      background: #111827;
-      color: #9ca3af;
-      padding: 25px;
-      text-align: center;
-      font-size: 0.9rem;
+    footer{
+      margin-top:40px;
+      background:#1e40af;
+      color:#fff;
+      padding:16px;
+      text-align:center;
+      font-size:14px;
     }
   </style>
 </head>
 
 <body>
 
-<!-- HEADER -->
 <header>
-  <div class="container">
+  <div class="wrap">
     <h1>⚡ WebExpress</h1>
     <p>Páginas web profesionales, rápidas y económicas en Colombia</p>
   </div>
 </header>
 
-<!-- PLAN BASICO -->
-<div class="container">
-  <div class="plan plan-basico">
-    <h2>Plan Básico (Recomendado)</h2>
-    <div class="price">$180.000 COP</div>
+<main class="wrap">
 
-    <p>
-      Página web profesional tipo <strong>landing page</strong>, lista en máximo
-      <strong>48 horas</strong>. Ideal para emprendedores y pequeños negocios.
-    </p>
+  <!-- PLAN BÁSICO -->
+  <section class="card plan-basico">
+    <h2>Plan Básico (Recomendado)</h2>
+    <p style="font-size:26px;font-weight:800">$180.000 COP</p>
+
+    <p>Página web profesional tipo <strong>landing page</strong>, lista en máximo <strong>48 horas</strong>.
+    Ideal para emprendedores y pequeños negocios.</p>
 
     <ul>
       <li>1 página web (inicio)</li>
@@ -162,47 +177,79 @@
       <li>Indexación en Google (puede aparecer en búsquedas)</li>
     </ul>
 
-    <div class="note">
-      <strong>Importante:</strong> este plan <u>NO incluye dominio propio ni hosting privado</u>.
+    <div class="notice">
+      <strong>Importante:</strong> este plan <strong>NO incluye dominio propio ni hosting privado</strong>.
       La página se publica en una plataforma web y puede ser encontrada en Google.
     </div>
 
-    <div class="buttons">
-      <a class="btn btn-wa" href="https://wa.me/573168726521" target="_blank">
-        Cotizar Plan Básico por WhatsApp
+    <div class="btn-row">
+      <a class="btn btn-wa"
+         href="https://wa.me/573168726521?text=Hola%20quiero%20el%20Plan%20Básico%20de%20WebExpress"
+         target="_blank">
+        Cotizar por WhatsApp
       </a>
 
-      <a class="btn btn-catalogo" href="#catalogo">
+      <a class="btn btn-red" href="#catalogo">
         Ver catálogo web básicas
       </a>
     </div>
 
-    <!-- CONTACTO -->
-    <div class="contact-box">
-      <h3>📞 Datos de contacto</h3>
-      <p><strong>WebExpress</strong></p>
-      <p>Cel: <strong>+57 316 872 6521</strong></p>
-      <p>Atención directa por WhatsApp y llamadas</p>
+    <!-- CATÁLOGO -->
+    <div id="catalogo" style="margin-top:24px">
+      <h3>Catálogo de muestra</h3>
+
+      <div class="btn-row">
+        <a class="btn btn-blue" target="_blank"
+           href="https://jhs68344.github.io/termografia-refractarios/">
+          Web-01 · Termografía
+        </a>
+
+        <a class="btn btn-blue" target="_blank"
+           href="https://jhs68344.github.io/liquidos-penetrantes/">
+          Web-02 · Inspección
+        </a>
+
+        <a class="btn btn-blue" target="_blank"
+           href="https://jhs68344.github.io/inspeccion-tanques-presion-asme/">
+          Web-03 · Excel
+        </a>
+      </div>
     </div>
 
-  </div>
-</div>
+    <!-- CONTACTO -->
+    <div class="card contact-box">
+      <h3>📞 Datos de contacto</h3>
+      <p><strong>WebExpress</strong></p>
+      <p>Cel: +57 316 872 6521</p>
+      <p>Atención directa por WhatsApp y llamadas</p>
+    </div>
+  </section>
 
-<!-- CATALOGO -->
-<section id="catalogo">
-  <div class="container">
-    <h2>📁 Catálogo de páginas web básicas</h2>
+  <!-- PLAN ESTÁNDAR -->
+  <section class="card plan-estandar">
+    <h2>Plan Estándar</h2>
+    <p style="font-size:22px;font-weight:800">Desde $300.000 COP</p>
+
     <ul>
-      <li><a href="https://heladiosan.github.io/WebExpress/web-01/" target="_blank">Web 01 – Industria</a></li>
-      <li><a href="https://heladiosan.github.io/WebExpress/web-02/" target="_blank">Web 02 – Negocios</a></li>
-      <li><a href="https://heladiosan.github.io/WebExpress/web-03/" target="_blank">Web 03 – Corporativa</a></li>
+      <li>Varias secciones (Inicio, Servicios, Contacto)</li>
+      <li>Dominio propio (.com o .com.co)</li>
+      <li>Hosting incluido</li>
+      <li>Correos corporativos</li>
+      <li>SEO inicial</li>
+      <li>Formulario de contacto</li>
     </ul>
-  </div>
-</section>
 
-<!-- FOOTER -->
+    <a class="btn btn-wa"
+       href="https://wa.me/573168726521?text=Hola%20quiero%20información%20del%20Plan%20Estándar%20con%20dominio%20y%20hosting"
+       target="_blank">
+      Cotizar Plan Estándar
+    </a>
+  </section>
+
+</main>
+
 <footer>
-  © 2026 WebExpress · Diseño web económico en Colombia · WhatsApp +57 316 872 6521
+  © WebExpress – Páginas web profesionales en Colombia
 </footer>
 
 </body>
